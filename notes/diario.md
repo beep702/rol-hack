@@ -22,3 +22,4 @@ Flask server: GET / 200, GET /login form, POST /login admin/admin 200 OK, POST /
 HALLAZGO CRITICO: Hydra contra Flask /login encontro admin/admin en 3s. Sin proteccion anti-fuerza-bruta. 10 passwords probadas, 1 valida.
 Rol-Hack subido a GitHub: https://github.com/beep702/rol-hack (commit 77fc583 + merge)
 Rol-Hack subido a GitHub: https://github.com/beep702/rol-hack (commit e7f151e)
+Verificado: .gitignore funciona correctamente en GitHub. Carpetas sensibles (scans/, loot/) NO subidas. Repo publico completo.
