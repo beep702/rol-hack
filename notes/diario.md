@@ -25,3 +25,5 @@ Rol-Hack subido a GitHub: https://github.com/beep702/rol-hack (commit e7f151e)
 Verificado: .gitignore funciona correctamente en GitHub. Carpetas sensibles (scans/, loot/) NO subidas. Repo publico completo.
 Recon 192.168.1.0/24: 3 hosts vivos - /data/data/com.termux/files/home/rol-hack/scans/recon_20261115_224331.txt
 CRON: recon_cron.sh programado (0 8 * * *). Primer test manual OK. Detectado nuevo host 192.168.1.104 (3 hosts vivos).
+Host 192.168.1.104: 0 puertos abiertos (1000 escaneados). Dispositivo cerrado a la red. Probable tele/tablet/telefono.
+Confirmado: 192.168.1.104 no tiene puertos 80/443 abiertos. Dispositivo cerrado, sin superficie de ataque TCP.
