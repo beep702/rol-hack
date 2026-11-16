@@ -20,3 +20,5 @@ nmap http-enum localhost:8000: 7 rutas encontradas (admin, admin/index.html, bac
 curl metodos: GET(200), HEAD(200), OPTIONS(501), POST(501), PUT(501). Python http.server solo GET/HEAD. Header Server expuesto en todos.
 Flask server: GET / 200, GET /login form, POST /login admin/admin 200 OK, POST /login wrong 401, GET /admin sin auth 401+WWW-Authenticate, GET /admin con auth 200, GET /api/data JSON. Ciclo completo auth web.
 HALLAZGO CRITICO: Hydra contra Flask /login encontro admin/admin en 3s. Sin proteccion anti-fuerza-bruta. 10 passwords probadas, 1 valida.
+Rol-Hack subido a GitHub: https://github.com/beep702/rol-hack (commit 77fc583 + merge)
+Rol-Hack subido a GitHub: https://github.com/beep702/rol-hack (commit e7f151e)
