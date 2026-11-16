@@ -1,0 +1,28 @@
+# Datos sensibles del lab
+loot/
+scans/
+*.restore
+
+# Wordlists pesadas (se descargan aparte)
+wordlists/raft-small-directories.txt
+wordlists/directory-list-*.txt
+wordlists/rockyou.txt
+
+# Configuraciones personales
+config/*.local
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Logs
+*.log
+
+# Hydra restore
+hydra.restore
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db

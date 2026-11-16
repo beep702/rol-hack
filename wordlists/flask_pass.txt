@@ -1,0 +1,10 @@
+admin
+1234
+password
+admin123
+12345678
+root
+toor
+qwerty
+letmein
+adminadmin
