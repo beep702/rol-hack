@@ -29,3 +29,4 @@ Host 192.168.1.104: 0 puertos abiertos (1000 escaneados). Dispositivo cerrado a 
 Confirmado: 192.168.1.104 no tiene puertos 80/443 abiertos. Dispositivo cerrado, sin superficie de ataque TCP.
 UDP scan sin root: limitacion de Android. Scapy parcheado (PF15) importa pero no envia (raw sockets bloqueados). nmap -sU requiere root. Documentado como limitacion.
 Comandos personalizados: rolupdate, rolhelp, rolscan, rollog, rolinfo. Todos funcionan.
+Personalizacion: banner ASCII + prompt personalizado (u0_a899 ~ ➜) + Zsh con autosuggestions. Configuracion en .zshrc.
