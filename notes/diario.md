@@ -30,3 +30,4 @@ Confirmado: 192.168.1.104 no tiene puertos 80/443 abiertos. Dispositivo cerrado,
 UDP scan sin root: limitacion de Android. Scapy parcheado (PF15) importa pero no envia (raw sockets bloqueados). nmap -sU requiere root. Documentado como limitacion.
 Comandos personalizados: rolupdate, rolhelp, rolscan, rollog, rolinfo. Todos funcionan.
 Personalizacion: banner ASCII + prompt personalizado (u0_a899 ~ ➜) + Zsh con autosuggestions. Configuracion en .zshrc.
+curl avanzado: POST login (200 OK / 401 FAIL), PUT (404), headers personalizados (-H), auth basica (-u admin:admin -> 200 OK). Ciclo completo de interaccion web.
