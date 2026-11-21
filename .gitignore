@@ -29,3 +29,4 @@ Thumbs.db
 tools/pf15-penetration-fast-15/
 nikto/
 nikto-sym-fix.sh
+sqlmap/
