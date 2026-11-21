@@ -31,3 +31,4 @@ UDP scan sin root: limitacion de Android. Scapy parcheado (PF15) importa pero no
 Comandos personalizados: rolupdate, rolhelp, rolscan, rollog, rolinfo. Todos funcionan.
 Personalizacion: banner ASCII + prompt personalizado (u0_a899 ~ ➜) + Zsh con autosuggestions. Configuracion en .zshrc.
 curl avanzado: POST login (200 OK / 401 FAIL), PUT (404), headers personalizados (-H), auth basica (-u admin:admin -> 200 OK). Ciclo completo de interaccion web.
+Nikto contra Flask: 8 hallazgos (headers de seguridad faltantes: CSP, HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy). Sin vulnerabilidades criticas. Metodos: GET, HEAD, OPTIONS.
