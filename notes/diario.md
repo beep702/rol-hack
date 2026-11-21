@@ -33,3 +33,4 @@ Personalizacion: banner ASCII + prompt personalizado (u0_a899 ~ ➜) + Zsh con a
 curl avanzado: POST login (200 OK / 401 FAIL), PUT (404), headers personalizados (-H), auth basica (-u admin:admin -> 200 OK). Ciclo completo de interaccion web.
 Nikto contra Flask: 8 hallazgos (headers de seguridad faltantes: CSP, HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy). Sin vulnerabilidades criticas. Metodos: GET, HEAD, OPTIONS.
 ffuf contra Flask: admin (401 Unauthorized, requiere auth), login (200 OK, formulario accesible). ffuf sigue redirecciones y detecta auth.
+dirb contra Flask: 2 rutas (admin 401, login 200). Coincide con ffuf. Tardo 7 min (lento pero clasico).
