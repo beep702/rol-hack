@@ -34,3 +34,4 @@ curl avanzado: POST login (200 OK / 401 FAIL), PUT (404), headers personalizados
 Nikto contra Flask: 8 hallazgos (headers de seguridad faltantes: CSP, HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy). Sin vulnerabilidades criticas. Metodos: GET, HEAD, OPTIONS.
 ffuf contra Flask: admin (401 Unauthorized, requiere auth), login (200 OK, formulario accesible). ffuf sigue redirecciones y detecta auth.
 dirb contra Flask: 2 rutas (admin 401, login 200). Coincide con ffuf. Tardo 7 min (lento pero clasico).
+HALLAZGO CRITICO: SQLi en Flask /login (parametro user). sqlmap detecto 4 tipos: boolean-based, error-based, time-based, UNION. DBMS: SQLite. Payload: admin' AND 1=1--
