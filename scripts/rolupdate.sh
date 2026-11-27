@@ -23,3 +23,5 @@ echo ""
 echo -e "${GREEN}=== Rol-Hack actualizado correctamente ===${NC}"
 echo -e "Fecha: $(date)"
 echo ""
+# Mostrar banner después de actualizar
+"$HOME/rol-hack/scripts/rolbanner.sh"

@@ -41,28 +41,12 @@ grep -q "alias rolscan" ~/.zshrc || echo 'alias rolscan="$HOME/rol-hack/scripts/
 grep -q "alias rollog" ~/.zshrc || echo 'alias rollog="$HOME/rol-hack/scripts/rollog.sh"' >> ~/.zshrc
 grep -q "alias rolinfo" ~/.zshrc || echo 'alias rolinfo="$HOME/rol-hack/scripts/rolinfo.sh"' >> ~/.zshrc
 
-# Banner para .zshrc
-if ! grep -q "R O L - H A C K" ~/.zshrc; then
+# Banner para .zshrc (llamada al script)
+if ! grep -q "rolbanner.sh" ~/.zshrc; then
     cat >> ~/.zshrc << 'BANNER_ZSH'
+# Banner de Rol-Hack
 if [ -d "$HOME/rol-hack" ]; then
-  echo ""
-  echo -e "\033[0;36m"
-  echo "    ██████╗  ██████╗ ██╗         ██╗  ██╗ █████╗  ██████╗██╗  ██╗"
-  echo "    ██╔══██╗██╔═══██╗██║         ██║  ██║██╔══██╗██╔════╝██║ ██╔╝"
-  echo "    ██████╔╝██║   ██║██║         ███████║███████║██║     █████╔╝ "
-  echo "    ██╔══██╗██║   ██║██║         ██╔══██║██╔══██║██║     ██╔═██╗ "
-  echo "    ██║  ██║╚██████╔╝███████╗    ██║  ██║██║  ██║╚██████╗██║  ██╗"
-  echo "    ╚═╝  ╚═╝ ╚═════╝ ╚══════╝    ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝"
-  echo -e "\033[0m"
-  echo -e "\033[0;33mPentesting & Desarrollo\033[0m"
-  echo -e "\033[0;32mDesarrollado por: beep702\033[0m"
-  echo ""
-  echo -e "\033[0;36m┌────────────────────────────────────────────┐\033[0m"
-  echo -e "\033[0;36m│\033[0m  \033[0;33mActualizar:\033[0m  \033[1;37mrolupdate\033[0m                    \033[0;36m│\033[0m"
-  echo -e "\033[0;36m│\033[0m  \033[0;33mAyuda:\033[0m       \033[1;37mrolhelp\033[0m                      \033[0;36m│\033[0m"
-  echo -e "\033[0;36m│\033[0m  \033[0;33mHerramientas:\033[0m \033[1;37mroltools\033[0m                     \033[0;36m│\033[0m"
-  echo -e "\033[0;36m└────────────────────────────────────────────┘\033[0m"
-  echo ""
+  "$HOME/rol-hack/scripts/rolbanner.sh"
 fi
 BANNER_ZSH
 fi
@@ -79,28 +63,12 @@ else
     cp "$HOME/.bashrc" "$HOME/.bashrc.backup.$(date +%Y%m%d%H%M%S)"
 fi
 
-# Banner para .bashrc
-if ! grep -q "R O L - H A C K" "$HOME/.bashrc"; then
+# Banner para .bashrc (llamada al script)
+if ! grep -q "rolbanner.sh" "$HOME/.bashrc"; then
     cat >> "$HOME/.bashrc" << 'BANNER_BASH'
+# Banner de Rol-Hack
 if [ -d "$HOME/rol-hack" ]; then
-  echo ""
-  echo -e "\033[0;36m"
-  echo "    ██████╗  ██████╗ ██╗         ██╗  ██╗ █████╗  ██████╗██╗  ██╗"
-  echo "    ██╔══██╗██╔═══██╗██║         ██║  ██║██╔══██╗██╔════╝██║ ██╔╝"
-  echo "    ██████╔╝██║   ██║██║         ███████║███████║██║     █████╔╝ "
-  echo "    ██╔══██╗██║   ██║██║         ██╔══██║██╔══██║██║     ██╔═██╗ "
-  echo "    ██║  ██║╚██████╔╝███████╗    ██║  ██║██║  ██║╚██████╗██║  ██╗"
-  echo "    ╚═╝  ╚═╝ ╚═════╝ ╚══════╝    ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝"
-  echo -e "\033[0m"
-  echo -e "\033[0;33mPentesting & Desarrollo\033[0m"
-  echo -e "\033[0;32mDesarrollado por: beep702\033[0m"
-  echo ""
-  echo -e "\033[0;36m┌────────────────────────────────────────────┐\033[0m"
-  echo -e "\033[0;36m│\033[0m  \033[0;33mActualizar:\033[0m  \033[1;37mrolupdate\033[0m                    \033[0;36m│\033[0m"
-  echo -e "\033[0;36m│\033[0m  \033[0;33mAyuda:\033[0m       \033[1;37mrolhelp\033[0m                      \033[0;36m│\033[0m"
-  echo -e "\033[0;36m│\033[0m  \033[0;33mHerramientas:\033[0m \033[1;37mroltools\033[0m                     \033[0;36m│\033[0m"
-  echo -e "\033[0;36m└────────────────────────────────────────────┘\033[0m"
-  echo ""
+  "$HOME/rol-hack/scripts/rolbanner.sh"
 fi
 BANNER_BASH
 fi
@@ -134,3 +102,4 @@ echo ""
 echo "[+] Instalación completada."
 echo "[+] Reinicia Termux o ejecuta 'source ~/.zshrc' para aplicar los cambios."
 echo "[+] Para usar Zsh, cierra y vuelve a abrir Termux."
+
